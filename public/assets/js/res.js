@@ -1,7 +1,11 @@
-$(function() {
+$(document).ready(function() {
+
     $(".eatburger").on("click", function(event) {
+
+      event.preventDefault();
+
       var id = $(this).data("id");
-    /  var newDevoured = $(this).data("newDevoured");
+     var newDevoured = $(this).data("newDevoured");
   
       var devouredState = {
         devoured: 1
@@ -23,7 +27,7 @@ $(function() {
       );
     });
   
-    $(".create-form").on("submit", function(event) {
+    $("#newburger").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
@@ -47,6 +51,9 @@ $(function() {
     });
   
     $(".trashburger").on("click", function(event) {
+
+      event,preventDefault();
+
       var id = $(this).data("id");
   
       // Send the DELETE request.
@@ -60,5 +67,6 @@ $(function() {
         }
       );
     });
+
   });
   
