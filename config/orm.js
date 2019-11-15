@@ -44,8 +44,9 @@ var orm = {
             throw err;
           }
 
-
-            console.log(res);
+           cb(res);
+           
+            console.log("alsjldhflsdj",res);
           
         });
       },
