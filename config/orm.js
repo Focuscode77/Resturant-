@@ -91,6 +91,7 @@ var orm = {
     });
   },
 
+
   deleteOne: function(table, condition, cb) {
     var queryString = "DELETE FROM " + table +
      " WHERE " +
@@ -105,6 +106,9 @@ var orm = {
     });
   }
 };
+
+
+
 
 // Export the orm object for the model (cat.js).
 module.exports = orm;

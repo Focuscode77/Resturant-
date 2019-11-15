@@ -19,7 +19,6 @@ app.use(express.json());
 
 // Set Handlebars.
 
-
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
